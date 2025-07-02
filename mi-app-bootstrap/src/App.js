@@ -1,25 +1,35 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AppNavbar from './components/Navbar';
 import Welcome from './components/Welcome';
 import CarouselSection from './components/CarouselSection';
 import Features from './components/Features';
 import Alerts from './components/Alerts';
 import Footer from './components/Footer';
-import { Container } from 'react-bootstrap';
+import Usuarios from './components/Usuarios'; // 👈 nuevo componente
 
 function App() {
   return (
-    <>
+    <Router>
       <AppNavbar />
-      <Container>
-        <Welcome />
-        <CarouselSection />
-        <Features />
-        <Alerts />
-      </Container>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Welcome />
+              <CarouselSection />
+              <Features />
+              <Alerts />
+            </>
+          }
+        />
+        <Route path="/usuarios" element={<Usuarios />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 
 export default App;
+
