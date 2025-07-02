@@ -7,6 +7,8 @@ import Alerts from './components/Alerts';
 import Footer from './components/Footer';
 import Usuarios from './components/Usuarios';
 import Sueldo from './components/Sueldo';
+import Bono from './components/Bono';
+import Registro from './components/Registro';
 import CarouselSection from './components/CarouselSection';
 
 const App: React.FC = () => {
@@ -27,6 +29,8 @@ const App: React.FC = () => {
         />
         <Route path="/usuarios" element={<Usuarios />} />
         <Route path="/sueldo" element={<Sueldo />} />
+        <Route path="/bono" element={<Bono />} />
+        <Route path="/registro" element={<Registro />} />
       </Routes>
       <Footer />
     </Router>
