@@ -2,11 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AppNavbar from './components/Navbar';
 import Welcome from './components/Welcome';
-import CarouselSection from './components/CarouselSection';
 import Features from './components/Features';
 import Alerts from './components/Alerts';
 import Footer from './components/Footer';
-import Usuarios from './components/Usuarios'; // 👈 nuevo componente
+import Usuarios from './components/Usuarios';
+import CarouselSection from './components/CarouselSection';
 
 function App() {
   return (
