@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import imagen from '../assets/imagen.jpg'; // usa tu imagen aquí
+import imagen from '../assets/imagen.jpg';
 
 function CarouselSection() {
   return (
