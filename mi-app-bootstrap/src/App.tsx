@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import Usuarios from './components/Usuarios';
 import CarouselSection from './components/CarouselSection';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <AppNavbar />
@@ -29,7 +29,6 @@ function App() {
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;
-
